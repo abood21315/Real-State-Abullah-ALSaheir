@@ -24,8 +24,6 @@ Route::get('/home', [HomeController::class, 'index'])
     ->middleware('auth')
     ->name('home');
 
-
-
 // جميع صفحات الموقع تحتاج تسجيل دخول
 Route::middleware(['auth'])->prefix('site')->name('site.')->group(function () {
 
