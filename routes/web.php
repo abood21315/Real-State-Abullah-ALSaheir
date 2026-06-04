@@ -16,7 +16,7 @@ Auth::routes();
 // الصفحة الرئيسية → تحويل لتسجيل الدخول
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
 });
 
 // بعد تسجيل الدخول
